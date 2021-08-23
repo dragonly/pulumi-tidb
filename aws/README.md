@@ -1,14 +1,4 @@
-# TiDB ❤️ Pulumi
-
-Deploy TiDB with Pulumi effortlessly.
-
-It should be easy to spin up some virtual machines, and deploy a TiDB cluster there for development & testing.
-
-This project is a work in progress. Contributions are appreciated!
-
-# Instructions
-
-## AWS
+# AWS
 
 1. Follow instructions in [Pulumi Get Started Docs on AWS](https://www.pulumi.com/docs/get-started/aws/begin/)
 2. [Create a key pair using Amazon EC2](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-key-pairs.html#having-ec2-create-your-key-pair)
@@ -21,10 +11,3 @@ This project is a work in progress. Contributions are appreciated!
 6. Get `tiup` on one ec2 instance, spin up the TiDB cluster, run benchmark, and do whatever you like!
     1. There's a `tiup` topology template file named `tidb-cluster.tiup-topology.yaml` in this project, you can start there.
 7. Run `pulumi destroy -y` to destroy all the resources
-
-## Cheat Sheet
-
-- Run `pulumi stack output` to check the public / private IPs of ec2 instances.
-- Run `ssh -i /path/to/key/pem ubuntu@ip-address` to access each ec2 instance.
-- Run `scp -i /path/to/key/pem` to copy files between your local machine and ec2 instances.
-- Instances could be inspected at [AWS Console](https://us-west-2.console.aws.amazon.com/ec2/v2/home?region=us-west-2#Instances:).
