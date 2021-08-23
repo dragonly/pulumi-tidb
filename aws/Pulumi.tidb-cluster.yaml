@@ -1,0 +1,12 @@
+encryptionsalt: v1:M4kR6tQclNc=:v1:EIeCNF+pZsglAHRL:q2RvJtNUb4iX3pIa6quxGB92r7O0gA==
+config:
+  aws:region: us-west-2
+  tidb:ec2KeyName: liyilong
+  tidb:ec2KeyPemFilename: /home/dragonly/pingcap/liyilong-general-log-bench-ec2.pem
+  tidb:resourceTag: liyilong-tidb-cluster
+  tidb:cluster:
+    nodes:
+    - instanceType: c5.2xlarge
+      count: 2
+    - instanceType: r5.2xlarge
+      count: 3

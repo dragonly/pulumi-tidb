@@ -1,0 +1,33 @@
+global:
+  user: "tidb"
+  ssh_port: 22
+  deploy_dir: "/tidb-deploy"
+  data_dir: "/tidb-data"
+  arch: "amd64"
+
+monitored:
+  node_exporter_port: 9100
+  blackbox_exporter_port: 9115
+
+pd_servers:
+  - host: 10.0.1.11
+
+tidb_servers:
+  - host: 10.0.1.14
+
+tikv_servers:
+  - host: 10.0.1.17
+  - host: 10.0.1.18
+  - host: 10.0.1.19
+
+tiflash_servers:
+  - host: 10.0.1.20
+
+monitoring_servers:
+  - host: 10.0.1.22
+
+grafana_servers:
+  - host: 10.0.1.22
+
+alertmanager_servers:
+  - host: 10.0.1.22

@@ -1,0 +1,3 @@
+name: tidb
+runtime: go
+description: A minimal AWS Go Pulumi program that give you a TiDB cluster at ease
